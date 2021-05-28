@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List with Vanilla JavaScript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="../css/all.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!--debe contener una imagen bonita junto con nun boton de refresh y debe marcar la fecha-->
+            <div class="refresh"><!--se encarga de borrar el almacenamiento local (local storage)-->
+                <i class="fas fa-redo-alt" aria-hidden="true"></i>
+            </div>
+            <div id="date"></div>
+        </div>
+        <div class="content"><!--debe contener la lista de actividades junto con un checkbox y un boton para eliminar la actividad de la lista-->
+            <ul id="list">
+            </ul>
+        </div>
+        <div class="add-item"><!--debe contener un campo input para escribir una actividad y un boton para agregarla a la lista-->
+            <input type="text" id="item" placeholder="Agregue una tarea por hacer">
+            <i class="fas fa-plus-circle" aria-hidden="true"></i>
+        </div>
+    </div>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
